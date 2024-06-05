@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Developer certification",
+        "description": "Enter your authentication information,your **app_key** and **app_secret**.",
+        "data": {
+          "app_key": "App ID",
+          "app_secret": "App Secret"
+        }
+      },
+      "auth": {
+        "title": "User authentication",
+        "description": "Please enter your Duwi account information,your **phone** and **password**.",
+        "data": {
+          "phone": "Phone",
+          "password": "Password"
+        }
+      },
+      "select_house": {
+        "title": "Select Your House",
+        "description": "You can select the house you own(The house you previously added has been excluded).",
+        "data": {
+          "house_nos": "Houses you own"
+        }
+      }
+    },
+    "error": {
+      "auth_error": "Abnormal {input}, status code: {code}",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "no_houses_found_error": "You have no houses available for addition were found in phone: {phone}",
+      "sys_error": "System error, status code: {code}",
+      "unknown_error": "An unknown error occurred. Please try again."
+    }
+  }
+}
